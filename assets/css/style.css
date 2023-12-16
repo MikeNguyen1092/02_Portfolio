@@ -5,6 +5,16 @@ body {
     background-color: #f4f9dd;
     width: 80%;
     margin: auto;
+    min-width: 375px;
+}
+
+header, main, footer {
+    margin-bottom: 3%;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 5%;
 }
 
 article{
@@ -20,4 +30,9 @@ h2{
     margin-left: 30%;
     padding-left: 10px;
     border-left: 5px red solid;
+}
+
+.contactMe ul li{
+    display: inline-block;
+    margin-right: 5%;
 }
