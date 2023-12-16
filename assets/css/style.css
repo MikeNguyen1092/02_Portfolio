@@ -5,18 +5,4 @@ body {
     background-color: #f4f9dd;
     width: 80%;
     margin: auto;
-    display: block;
-}
-
-h2 {
-    padding: 10px;
-    float: left;
-}
-
-.aboutMe p {
-    background-color: #333;
-    color: #fff;
-    border-left: 5px red solid;
-    margin-left: 10px;
-    width: auto;
 }
