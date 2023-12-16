@@ -3,17 +3,23 @@
 } */
 body {
     background-color: #f4f9dd;
-    width: 80%;
-    margin: auto;
     min-width: 375px;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-header, main, footer {
+/* header, main, footer {
+    padding: 20px;
+} */
+
+header{
+    background-color: rgb(159, 143, 182);
     padding: 20px;
 }
 
 h1 {
-    float: left;
+    display: inline-block;
+    font-size: 400%;
 }
 
 nav {
@@ -22,7 +28,8 @@ nav {
 
 nav ul li{
     display: inline-block;
-    margin-right: 20px;
+    padding: 20px;
+    font-size: 125%;
 }
 
 article{
@@ -30,7 +37,9 @@ article{
 }
 
 h2{
-    float: left;
+    display: inline-block;
+    font-size: 150%;
+    padding-left: 10%;
 }
 
 
