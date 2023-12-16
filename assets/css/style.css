@@ -6,3 +6,18 @@ body {
     width: 80%;
     margin: auto;
 }
+
+article{
+    margin-bottom: 20px;
+}
+
+h2{
+    float: left;
+}
+
+
+.aboutMe p, .refractor, .soon, .contactMe ul {
+    margin-left: 30%;
+    padding-left: 10px;
+    border-left: 5px red solid;
+}
