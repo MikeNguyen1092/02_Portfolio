@@ -9,12 +9,20 @@ body {
 }
 
 header, main, footer {
-    margin-bottom: 3%;
+    padding: 20px;
+}
+
+h1 {
+    float: left;
+}
+
+nav {
+    float: right;
 }
 
 nav ul li{
     display: inline-block;
-    margin-right: 5%;
+    margin-right: 20px;
 }
 
 article{
