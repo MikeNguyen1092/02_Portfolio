@@ -1,6 +1,7 @@
-/* :root{
+:root{
+    --pad: 20px;
 
-} */
+}
 body {
     background-color: #f4f9dd;
     min-width: 375px;
@@ -32,18 +33,17 @@ nav ul li{
     font-size: 125%;
 }
 
-article{
-    margin-bottom: 20px;
-}
+
 
 h2{
     display: inline-block;
     font-size: 150%;
     padding-left: 10%;
+    
 }
 
 
-.aboutMe p, .refractor, .soon, .contactMe ul {
+.aboutMe p, .work, .contactMe ul {
     margin-left: 30%;
     padding-left: 10px;
     border-left: 5px red solid;
@@ -52,4 +52,28 @@ h2{
 .contactMe ul li{
     display: inline-block;
     margin-right: 5%;
+}
+
+.refractor { grid-area: top; }
+#soon1 { grid-area: tLeft; }
+#soon2 { grid-area: tRight; }
+#soon3 { grid-area: bLeft; }
+#soon4 { grid-area: bRight; }
+
+.work {
+    display: grid;
+    grid-template-areas: 
+        'top top top top top top'
+        'tLeft tLeft tLeft tRight tRight tRight'
+        'bLeft bLeft bLeft bRight bRight bRight';
+    gap: 10px;
+    background-color: #2196f3;
+    padding: 10px;
+}
+
+.work > div {
+    background-color: greenyellow;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 120%;
 }
