@@ -16,15 +16,24 @@ body {
 header{
     background-color: rgb(159, 143, 182);
     padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 h1 {
-    display: inline-block;
     font-size: 400%;
 }
 
 nav {
-    float: right;
+    display: inline-flex;
+    margin-right: 5%;
+
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
 }
 
 nav ul li{
@@ -33,20 +42,27 @@ nav ul li{
     font-size: 125%;
 }
 
-
-
 h2{
     display: inline-block;
     font-size: 150%;
-    padding-left: 10%;
+    padding: 0 0 0 10%;
 
 }
 
+.aboutMe h2 {
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 10%;
+    font-size: 150%;
+}
 
-.aboutMe p, .work, .contactMe ul {
-    margin-left: 30%;
+
+.aboutMe div, .work, .contactMe ul {
+    margin: 0 5% 0 30%;
     padding-left: 10px;
     border-left: 5px red solid;
+    vertical-align: text-top;
+
 }
 
 .contactMe ul li{
