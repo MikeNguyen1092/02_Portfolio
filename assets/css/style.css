@@ -1,7 +1,7 @@
 :root{
     --pad: 20px;
     --tGridHeight: 10em;
-    --GridHeight: 6em;
+    --GridHeight: 6.5em;
     --fSize: 125%;
     --h2Size: 200%
 
@@ -77,7 +77,8 @@ h2{
 
 .refractor { 
     grid-area: top; 
-    height: var(--tGridHeight);
+    cursor: pointer;
+
 }
 
 #soon1 { 
@@ -108,27 +109,33 @@ h2{
 }
 
 .work > div {
-    background-color: greenyellow;
-    align-self: end;
     padding: 20px 0;
     font-size: var(--fSize);
     border-radius: 15px;
-
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
 }
+
 
 .work div > * {
     font-size: var(--fSize);
-    margin: 0 1em;
     border: 1px grey solid;
-    width: 25%;
+    width: 30%;
     background-color: lightgrey;
     box-shadow: 2px 2px 10px #888;
+    margin: 1px 0 0 10px;
 }
 
 .soon {
-    background-image: url(../image/coming-soon.jpg); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+    background-image: url(../image/coming-soon.jpg);
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
 }
-     
+
+.refractor img{
+    height: 200px;
+    width: 40em;
+    object-fit: cover;
+    
+}

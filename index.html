@@ -13,9 +13,9 @@
         <nav>
             <!-- TODO: need to like to articles in the HTML -->
             <ul> 
-                <li><a href="">About Me</a></li>
-                <li><a href="#">Work</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#aboutMeNav">About Me</a></li>
+                <li><a href="#workNav">Work</a></li>
+                <li><a href="#contactMeNav">Contact</a></li>
                 <li><a href="#">Resume</a></li>
             </ul>
         </nav>
@@ -23,7 +23,7 @@
     
     <main>
         <section>
-            <article class="aboutMe">
+            <article class="aboutMe" id="aboutMeNav">
                 <h2>About Me</h2>
                 <div>
                     <p>
@@ -38,9 +38,12 @@
 
             <article >
                 <h2>Work</h2>
-                <div class="work">
+                <div class="work" id="workNav">
                     <div class="refractor">
-                        <h3>Code Refractor</h3>
+                        <a href="https://mikenguyen1092.github.io/01_Code_Refractor/">
+                            <img src="./assets/image/Horiseon.png" alt="Code Refractor Image">
+                            <h3>Code Refractor</h3>
+                        </a>                        
                     </div>
                     <div class="soon" id="soon1">
                         <h3>Coming Soon 1</h3>
@@ -57,7 +60,7 @@
                 </div>
             </article>
 
-            <article class="contactMe">
+            <article class="contactMe" id="contactMeNav">
                 <h2>Contact Me</h2>
                 <ul>
                     <li>555-555-5555</li>
