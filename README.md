@@ -1,1 +1,5 @@
-# 02_Portfolio
+# 02 Portfolio
+
+## Description
+
+This is a work in progress portfolio. The objective is to have a working HTML and CSS to meet certain criterias. 
