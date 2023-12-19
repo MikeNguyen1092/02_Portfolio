@@ -1,5 +1,9 @@
 :root{
     --pad: 20px;
+    --tGridHeight: 9em;
+    --GridHeight: 4em;
+    --fSize: 125%;
+    --h2Size: 150%
 
 }
 body {
@@ -9,9 +13,9 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* header, main, footer {
+header, main, footer {
     padding: 20px;
-} */
+}
 
 header{
     background-color: rgb(159, 143, 182);
@@ -39,27 +43,25 @@ nav ul {
 nav ul li{
     display: inline-block;
     padding: 20px;
-    font-size: 125%;
+    font-size: var(--fSize);
 }
 
 h2{
     display: inline-block;
-    font-size: 150%;
+    font-size: var(--h2Size);
     padding: 0 0 0 10%;
 
 }
 
-.aboutMe h2 {
-    display: inline-block;
-    vertical-align: top;
-    padding-left: 10%;
-    font-size: 150%;
+
+.aboutMe p {
+    font-size: var(--fSize);
 }
 
-
+/*  */
 .aboutMe div, .work, .contactMe ul {
-    margin: 0 5% 0 30%;
-    padding-left: 10px;
+    margin: -1.5em 5% 5em 30%;
+    padding-left: 3em;
     border-left: 5px red solid;
     vertical-align: text-top;
 
@@ -70,27 +72,54 @@ h2{
     margin-right: 5%;
 }
 
-.refractor { grid-area: top; 
-height: 100px;}
-#soon1 { grid-area: tLeft; }
-#soon2 { grid-area: tRight; }
-#soon3 { grid-area: bLeft; }
-#soon4 { grid-area: bRight; }
+/* format and style the grid */
+
+.refractor { 
+    grid-area: top; 
+    height: var(--tGridHeight);
+}
+
+#soon1 { 
+    grid-area: tLeft;
+    height: var(--GridHeight);
+ }
+#soon2 { 
+    grid-area: tRight;
+    height: var(--GridHeight) 
+}
+#soon3 { 
+    grid-area: bLeft;
+    height: var(--GridHeight)
+}
+#soon4 { 
+    grid-area: bRight;
+    height: var(--GridHeight)
+}
 
 .work {
     display: grid;
     grid-template-areas: 
-        'top top top top top top'
-        'tLeft tLeft tLeft tRight tRight tRight'
-        'bLeft bLeft bLeft bRight bRight bRight';
+        'top top'
+        'tLeft tRight'
+        'bLeft bRight';
     gap: 10px;
-    background-color: #2196f3;
-    padding: 10px;
+    padding-left: 3em;
 }
 
 .work > div {
     background-color: greenyellow;
     align-self: end;
     padding: 20px 0;
-    font-size: 120%;
+    font-size: var(--fSize);
+    border-radius: 15px;
+
+}
+
+.work div > * {
+    font-size: var(--fSize);
+    margin: 0 1em;
+    border: 1px grey solid;
+    width: 25%;
+    background-color: lightgrey;
+    box-shadow: 2px 2px 10px #888;
 }
