@@ -117,8 +117,16 @@ h2{
     text-align: center;
 }
 
+/* .work div > * {
+    font-size: var(--fSize);
+    border: 1px grey solid;
+    width: 30%;
+    background-color: lightgrey;
+    box-shadow: 2px 2px 10px #888;
+    margin: 1px 0 0 10px;
+} */
 
-.work div > * {
+.work div h3{
     font-size: var(--fSize);
     border: 1px grey solid;
     width: 30%;
@@ -126,6 +134,21 @@ h2{
     box-shadow: 2px 2px 10px #888;
     margin: 1px 0 0 10px;
 }
+
+#refactorID{
+    position: absolute;
+    top: 650px;
+    width: 186px;
+}
+
+a#link {
+    color: black !important
+}
+
+.workHeading {
+    font-size: var(--fSize);
+}
+
 
 .soon {
     background-image: url(../image/coming-soon.jpg);
