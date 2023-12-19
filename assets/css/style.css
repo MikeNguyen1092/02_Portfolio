@@ -1,9 +1,9 @@
 :root{
     --pad: 20px;
-    --tGridHeight: 9em;
-    --GridHeight: 4em;
+    --tGridHeight: 10em;
+    --GridHeight: 6em;
     --fSize: 125%;
-    --h2Size: 150%
+    --h2Size: 200%
 
 }
 body {
@@ -18,15 +18,16 @@ header, main, footer {
 }
 
 header{
-    background-color: rgb(159, 143, 182);
+    background-color: rgb(118, 111, 241);
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 5em;
 }
 
 h1 {
-    font-size: 400%;
+    font-size: 300%;
 }
 
 nav {
@@ -62,7 +63,7 @@ h2{
 .aboutMe div, .work, .contactMe ul {
     margin: -1.5em 5% 5em 30%;
     padding-left: 3em;
-    border-left: 5px red solid;
+    border-left: 5px #888 solid;
     vertical-align: text-top;
 
 }
@@ -123,3 +124,11 @@ h2{
     background-color: lightgrey;
     box-shadow: 2px 2px 10px #888;
 }
+
+.soon {
+    background-image: url(../image/coming-soon.jpg); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+     
