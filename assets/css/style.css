@@ -6,13 +6,14 @@
     --h2Size: 200%
 
 }
+
 body {
     background-color: #f4f9dd;
     min-width: 375px;
     font-size: 16px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
+/* Header and nav secton */
 header, main, footer {
     padding: 20px;
 }
@@ -75,7 +76,7 @@ h2{
 
 /* format and style the grid */
 
-.refractor { 
+.refactor { 
     grid-area: top; 
     cursor: pointer;
 
@@ -111,20 +112,11 @@ h2{
 .work > div {
     padding: 20px 0;
     font-size: var(--fSize);
-    border-radius: 15px;
+    border-radius: 20px;
     display: flex;
     align-items: flex-end;
     text-align: center;
 }
-
-/* .work div > * {
-    font-size: var(--fSize);
-    border: 1px grey solid;
-    width: 30%;
-    background-color: lightgrey;
-    box-shadow: 2px 2px 10px #888;
-    margin: 1px 0 0 10px;
-} */
 
 .work div h3{
     font-size: var(--fSize);
@@ -133,11 +125,12 @@ h2{
     background-color: lightgrey;
     box-shadow: 2px 2px 10px #888;
     margin: 1px 0 0 10px;
+    border-radius: 10px;
 }
 
 #refactorID{
-    position: absolute;
-    top: 650px;
+    position: relative;
+    top: -41px;
     width: 186px;
 }
 
@@ -156,13 +149,13 @@ a#link {
     background-position: center;
 }
 
-.refractor img{
+.refactor a img{
     height: 200px;
-    width: 40em;
+    width: 50em;
     object-fit: cover;
     
 }
 
-.soon:hover {
+.refactor:hover {
   box-shadow: inset 0px 0px 8px var(--heliotrope), 0 0 15px var(--heliotrope);
 }
